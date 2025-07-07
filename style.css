@@ -1,0 +1,28 @@
+#qrcode {
+  padding: 64px;
+  background: white;
+}
+
+main {
+  display: grid;
+  grid-template:
+    "label input"
+    "qrcode qrcode"
+    /
+    auto 1fr;
+  grid-gap: 1em;
+}
+
+main > input {
+  width: 100%;
+  display: block;
+  grid-area: input;
+}
+
+#qrcode {
+  grid-area: qrcode;
+}
+
+#qrcode svg {
+  max-height: 50vh;
+}
